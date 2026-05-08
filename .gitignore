@@ -3,7 +3,8 @@
 *.tfstate
 *.tfstate.backup
 *.tfplan
-*.lock.hcl
+.terraform.tfstate.lock.info
+*.tfstate.lock.info
 crash.log
 crash.*.log
 override.tf
@@ -14,7 +15,8 @@ override.tf.json
 terraform.rc
 
 # SSH Keys (never commit private keys)
-terra-key
+terra-key*
+terra-key*.pub
 *.pem
 
 # OS
