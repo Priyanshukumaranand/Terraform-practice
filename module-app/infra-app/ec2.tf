@@ -57,7 +57,7 @@ resource "aws_instance" "my_instance" {
   security_groups = [aws_security_group.my_sg.name]
   instance_type   = var.ec2_instance_type
   ami             = var.aws_ami_id
-  user_data       = file("nginx.sh")
+  user_data       = file("${path.module}/../nginx.sh")
 
   root_block_device {
     volume_size = var.env == "prod" ? 20 : 8
