@@ -1,0 +1,10 @@
+{
+    "chat.mcp.serverSampling": {
+        "terraform/.vscode/mcp.json: io.github.hashicorp/terraform-mcp-server": {
+            "allowedModels": [
+                "copilot/auto",
+                "copilotcli/claude-haiku-4.5"
+            ]
+        }
+    }
+}
