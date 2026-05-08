@@ -11,3 +11,8 @@ variable "aws_ami_id" {
   type    = string
 }
 
+variable "ssh_public_key" {
+  description = "SSH public key material to register as an EC2 key pair"
+  type        = string
+}
+

@@ -1,7 +1,7 @@
 //make key pair for ec2 instance
 resource "aws_key_pair" "my_key" {
   key_name   = "${var.env}-infra-key"
-  public_key = file("terra-key-ec2.pub")
+  public_key = var.ssh_public_key
   tags = {
     Environment = var.env
   }
